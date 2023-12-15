@@ -8,7 +8,7 @@ class susu_timer{
         void begin();    //get the begin time
         void end();  //get the stop time
         timeval get_difference();   //get the time distance  stop - start
-        void delay(long sec,long us);    //delay a period of time
+        void delay(long sec,long ms);    //delay a period of time
     private:
         timeval start = {0,0};
         timeval stop = {0,0};

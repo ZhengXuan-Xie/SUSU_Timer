@@ -22,8 +22,8 @@ timeval susu_timer::get_difference()
     return ret;
 }
 
-void susu_timer::delay(long sec,long us){
-    timespec tx = {sec,us*1000};
+void susu_timer::delay(long sec,long ms){
+    timespec tx = {sec,ms*1000};
     nanosleep(&tx,NULL);
 }
 
